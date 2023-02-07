@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest-country-api</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script -->
+    <script src="script.js" defer></script>
+  </head>
+  <body class="dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav pt-3 pb-3">
+      <div class="container-fluid nav-wrapper">
+        <h2 class="ms-5">Where in the world?</h2>
+        <div class="mode d-flex align-items-center justify-content-end">
+          <img src="images/moon-solid.svg" class="moon" />
+          <p class="me-5">Dark Mode</p>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapp">
+      <div
+        class="search-filter ms-3 me-3 ms-sm-5 me-sm-5 mt-4 d-flex align-items-center justify-content-between"
+      >
+        <div class="search pt-2 pb-2">
+          <img src="images/magnifying-glass-solid.svg" class="search_img" />
+          <input
+            type="search"
+            placeholder="Search for a country..."
+            class="search_input"
+          />
+        </div>
+        <div class="filter dropdown">
+          <button
+            class="btn dropdown-toggle pt-2 pb-2"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filter by Region
+          </button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">All</li>
+            <li class="dropdown-item">Africa</li>
+            <li class="dropdown-item">America</li>
+            <li class="dropdown-item">Asia</li>
+            <li class="dropdown-item">Europe</li>
+            <li class="dropdown-item">Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="error-msg text-center">No Countries Found!☹️</div>
+      <div
+        class="d-flex align-items-center justify-content-center flex-wrap country_container mb-5"
+      ></div>
+      <div class="loader"></div>
+    </div>
+    <div class="wrapp2">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html>
